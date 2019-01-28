@@ -12,6 +12,14 @@
 		A1C28B4921E8A33E004E6A23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C28B4721E8A33E004E6A23 /* Main.storyboard */; };
 		A1C28B4B21E8A340004E6A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C28B4A21E8A340004E6A23 /* Assets.xcassets */; };
 		A1C28B4E21E8A340004E6A23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C28B4C21E8A340004E6A23 /* LaunchScreen.storyboard */; };
+		A1C28B5721E8B74A004E6A23 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C28B5621E8B74A004E6A23 /* Playlist.swift */; };
+		A1C28B5D21E8BE26004E6A23 /* PlayListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C28B5B21E8BE26004E6A23 /* PlayListCell.swift */; };
+		A1C28B5E21E8BE26004E6A23 /* PlayListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C28B5C21E8BE26004E6A23 /* PlayListCell.xib */; };
+		A1C28B6521EC86E2004E6A23 /* SongsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C28B6421EC86E2004E6A23 /* SongsTableViewController.swift */; };
+		A1C28B6721EC8784004E6A23 /* Songs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C28B6621EC8784004E6A23 /* Songs.swift */; };
+		A1C28B6A21EC8839004E6A23 /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C28B6821EC8839004E6A23 /* SongCell.swift */; };
+		A1C28B6B21EC8839004E6A23 /* SongCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C28B6921EC8839004E6A23 /* SongCell.xib */; };
+		A1C28B6F21ECB32B004E6A23 /* FavTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C28B6E21ECB32B004E6A23 /* FavTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		A1C28B4A21E8A340004E6A23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1C28B4D21E8A340004E6A23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1C28B4F21E8A340004E6A23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1C28B5621E8B74A004E6A23 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		A1C28B5B21E8BE26004E6A23 /* PlayListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListCell.swift; sourceTree = "<group>"; };
+		A1C28B5C21E8BE26004E6A23 /* PlayListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayListCell.xib; sourceTree = "<group>"; };
+		A1C28B6421EC86E2004E6A23 /* SongsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsTableViewController.swift; sourceTree = "<group>"; };
+		A1C28B6621EC8784004E6A23 /* Songs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Songs.swift; sourceTree = "<group>"; };
+		A1C28B6821EC8839004E6A23 /* SongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
+		A1C28B6921EC8839004E6A23 /* SongCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongCell.xib; sourceTree = "<group>"; };
+		A1C28B6E21ECB32B004E6A23 /* FavTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +70,38 @@
 		A1C28B4221E8A33E004E6A23 /* Tema5-AppleMusic */ = {
 			isa = PBXGroup;
 			children = (
+				A1C28B5821E8BDBC004E6A23 /* PlayList */,
+				A1C28B5521E8B722004E6A23 /* Songs */,
 				A1C28B4321E8A33E004E6A23 /* AppDelegate.swift */,
 				A1C28B4521E8A33E004E6A23 /* ViewController.swift */,
 				A1C28B4721E8A33E004E6A23 /* Main.storyboard */,
 				A1C28B4A21E8A340004E6A23 /* Assets.xcassets */,
 				A1C28B4C21E8A340004E6A23 /* LaunchScreen.storyboard */,
 				A1C28B4F21E8A340004E6A23 /* Info.plist */,
+				A1C28B6421EC86E2004E6A23 /* SongsTableViewController.swift */,
+				A1C28B6E21ECB32B004E6A23 /* FavTableViewController.swift */,
 			);
 			path = "Tema5-AppleMusic";
+			sourceTree = "<group>";
+		};
+		A1C28B5521E8B722004E6A23 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				A1C28B6621EC8784004E6A23 /* Songs.swift */,
+				A1C28B6821EC8839004E6A23 /* SongCell.swift */,
+				A1C28B6921EC8839004E6A23 /* SongCell.xib */,
+			);
+			path = Songs;
+			sourceTree = "<group>";
+		};
+		A1C28B5821E8BDBC004E6A23 /* PlayList */ = {
+			isa = PBXGroup;
+			children = (
+				A1C28B5B21E8BE26004E6A23 /* PlayListCell.swift */,
+				A1C28B5C21E8BE26004E6A23 /* PlayListCell.xib */,
+				A1C28B5621E8B74A004E6A23 /* Playlist.swift */,
+			);
+			path = PlayList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +163,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1C28B4E21E8A340004E6A23 /* LaunchScreen.storyboard in Resources */,
+				A1C28B6B21EC8839004E6A23 /* SongCell.xib in Resources */,
 				A1C28B4B21E8A340004E6A23 /* Assets.xcassets in Resources */,
 				A1C28B4921E8A33E004E6A23 /* Main.storyboard in Resources */,
+				A1C28B5E21E8BE26004E6A23 /* PlayListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +177,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1C28B6721EC8784004E6A23 /* Songs.swift in Sources */,
 				A1C28B4621E8A33E004E6A23 /* ViewController.swift in Sources */,
 				A1C28B4421E8A33E004E6A23 /* AppDelegate.swift in Sources */,
+				A1C28B6F21ECB32B004E6A23 /* FavTableViewController.swift in Sources */,
+				A1C28B6A21EC8839004E6A23 /* SongCell.swift in Sources */,
+				A1C28B5721E8B74A004E6A23 /* Playlist.swift in Sources */,
+				A1C28B6521EC86E2004E6A23 /* SongsTableViewController.swift in Sources */,
+				A1C28B5D21E8BE26004E6A23 /* PlayListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +329,7 @@
 		A1C28B5321E8A340004E6A23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6847YQ47R6;
 				INFOPLIST_FILE = "Tema5-AppleMusic/Info.plist";
@@ -299,7 +347,7 @@
 		A1C28B5421E8A340004E6A23 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6847YQ47R6;
 				INFOPLIST_FILE = "Tema5-AppleMusic/Info.plist";
